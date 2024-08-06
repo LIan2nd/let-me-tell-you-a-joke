@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I'll Tell You a Joke</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <main>
+    <h1>Let me tell u a Joke</h1>
+    <% if(locals.prepare) { %>
+      <p>Click button below to get a joke</p>
+      <% } %>
+
+        <article class="joke-section">
+
+          <% if(locals.theJoke) { %>
+            <img src="img/<%=img%>.jpeg" alt="joke-img" width="200" height="200">
+            <p>
+              <%- theJoke %>
+            </p>
+            <% } %>
+
+        </article>
+
+        <!-- Joke Generate -->
+        <form method="post">
+          <label for="category">Select Joke Category</label>
+          <select name="category" id="category">
+            <option value="any">Anything</option>
+            <option value="programming">Programming</option>
+            <option value="miscellaneous">Misc</option>
+            <option value="dark">Dark</option>
+            <option value="pun">Pun</option>
+            <option value="spooky">Spooky</option>
+            <option value="christmas">Christmas</option>
+          </select>
+
+          <input type="submit" value="getajoke" formaction="/">
+        </form>
+  </main>
+</body>
+
+</html>

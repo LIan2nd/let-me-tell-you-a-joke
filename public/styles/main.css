@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gupter", serif;
+}
+
+body {
+  background-color: #021526;
+}
+
+main {
+  background-color: #03346E;
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4rem .5rem;
+  height: 100vh;
+}
+
+main h1 {
+  margin-bottom: 1rem;
+  font-size: 2.9rem;
+  color: #6EACDA;
+  font-family: "Ubuntu", sans-serif;
+}
+
+article {
+  margin: 3rem 1rem;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+p,
+label {
+  color: #E2E2B6;
+}
+
+label,
+input,
+select {
+  font-size: 1rem;
+}
+
+article img {
+  margin-bottom: 1.1rem;
+  border-radius: 3px;
+}
+
+form {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+
+input,
+select {
+  display: inline-block;
+  padding: .3rem;
+  max-width: 300px;
+  width: 80%;
+  text-transform: uppercase;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
