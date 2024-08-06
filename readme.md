@@ -9,3 +9,7 @@ npm i
 ```
 nodemon index.js
 ```
+and go to
+```
+localhost:3000/
+```
